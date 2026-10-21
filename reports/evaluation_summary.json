@@ -1,0 +1,205 @@
+{
+    "timestamp": "2026-10-14T10:05:12.006589+00:00",
+    "benchmark_version": "1.0",
+    "metrics": {
+        "total_tests": 10,
+        "passed_tests": 10,
+        "failed_tests": 0,
+        "success_rate_percent": 100.0,
+        "validation_accuracy_percent": 100.0,
+        "correct_validation_checks": 80,
+        "total_validation_checks": 80,
+        "error_rate_percent": 0.0,
+        "average_latency_ms": 0.0463,
+        "minimum_latency_ms": 0.0228,
+        "maximum_latency_ms": 0.0986,
+        "p50_latency_ms": 0.0375,
+        "p95_latency_ms": 0.0986,
+        "total_execution_time_seconds": 0.00189,
+        "throughput_requests_per_second": 5291.85
+    },
+    "average_agent_latency_ms": {
+        "employee_information_agent_ms": 0.006,
+        "document_verification_agent_ms": 0.0115,
+        "it_setup_agent_ms": 0.0055,
+        "orientation_agent_ms": 0.0043
+    },
+    "cost": {
+        "external_api_cost_usd": 0.0,
+        "llm_token_cost_usd": 0.0,
+        "api_calls": 0,
+        "local_compute_cost_usd": null
+    },
+    "individual_results": [
+        {
+            "test_id": "TC01",
+            "description": "Complete employee information",
+            "expected_status": "READY FOR ONBOARDING",
+            "actual_status": "READY FOR ONBOARDING",
+            "passed": true,
+            "latency_ms": 0.0854,
+            "error": "",
+            "validation_checks": 8,
+            "correct_checks": 8,
+            "agent_timings_ms": {
+                "employee_information_agent_ms": 0.014999997802078724,
+                "document_verification_agent_ms": 0.01200000406242907,
+                "it_setup_agent_ms": 0.00790000194683671,
+                "orientation_agent_ms": 0.011399999493733048
+            }
+        },
+        {
+            "test_id": "TC02",
+            "description": "Missing employee name",
+            "expected_status": "INCOMPLETE",
+            "actual_status": "INCOMPLETE",
+            "passed": true,
+            "latency_ms": 0.0407,
+            "error": "",
+            "validation_checks": 8,
+            "correct_checks": 8,
+            "agent_timings_ms": {
+                "employee_information_agent_ms": 0.00580001506023109,
+                "document_verification_agent_ms": 0.006399990525096655,
+                "it_setup_agent_ms": 0.005299982149153948,
+                "orientation_agent_ms": 0.0040000013541430235
+            }
+        },
+        {
+            "test_id": "TC03",
+            "description": "Missing employee ID",
+            "expected_status": "INCOMPLETE",
+            "actual_status": "INCOMPLETE",
+            "passed": true,
+            "latency_ms": 0.0464,
+            "error": "",
+            "validation_checks": 8,
+            "correct_checks": 8,
+            "agent_timings_ms": {
+                "employee_information_agent_ms": 0.00790000194683671,
+                "document_verification_agent_ms": 0.00689999433234334,
+                "it_setup_agent_ms": 0.006599992047995329,
+                "orientation_agent_ms": 0.0031999952625483274
+            }
+        },
+        {
+            "test_id": "TC04",
+            "description": "Missing department",
+            "expected_status": "INCOMPLETE",
+            "actual_status": "INCOMPLETE",
+            "passed": true,
+            "latency_ms": 0.0986,
+            "error": "",
+            "validation_checks": 8,
+            "correct_checks": 8,
+            "agent_timings_ms": {
+                "employee_information_agent_ms": 0.0044000043999403715,
+                "document_verification_agent_ms": 0.04779998562298715,
+                "it_setup_agent_ms": 0.012199976481497288,
+                "orientation_agent_ms": 0.0051000097300857306
+            }
+        },
+        {
+            "test_id": "TC05",
+            "description": "Missing job role",
+            "expected_status": "INCOMPLETE",
+            "actual_status": "INCOMPLETE",
+            "passed": true,
+            "latency_ms": 0.0412,
+            "error": "",
+            "validation_checks": 8,
+            "correct_checks": 8,
+            "agent_timings_ms": {
+                "employee_information_agent_ms": 0.006700021913275123,
+                "document_verification_agent_ms": 0.00680002267472446,
+                "it_setup_agent_ms": 0.005999987479299307,
+                "orientation_agent_ms": 0.0041000021155923605
+            }
+        },
+        {
+            "test_id": "TC06",
+            "description": "Missing identity document",
+            "expected_status": "INCOMPLETE",
+            "actual_status": "INCOMPLETE",
+            "passed": true,
+            "latency_ms": 0.0375,
+            "error": "",
+            "validation_checks": 8,
+            "correct_checks": 8,
+            "agent_timings_ms": {
+                "employee_information_agent_ms": 0.006200018106028438,
+                "document_verification_agent_ms": 0.014199991710484028,
+                "it_setup_agent_ms": 0.0033999967854470015,
+                "orientation_agent_ms": 0.0031999952625483274
+            }
+        },
+        {
+            "test_id": "TC07",
+            "description": "Missing educational certificate",
+            "expected_status": "INCOMPLETE",
+            "actual_status": "INCOMPLETE",
+            "passed": true,
+            "latency_ms": 0.0319,
+            "error": "",
+            "validation_checks": 8,
+            "correct_checks": 8,
+            "agent_timings_ms": {
+                "employee_information_agent_ms": 0.0037999998312443495,
+                "document_verification_agent_ms": 0.006699992809444666,
+                "it_setup_agent_ms": 0.0047000066842883825,
+                "orientation_agent_ms": 0.0035999983083456755
+            }
+        },
+        {
+            "test_id": "TC08",
+            "description": "Missing signed offer letter",
+            "expected_status": "INCOMPLETE",
+            "actual_status": "INCOMPLETE",
+            "passed": true,
+            "latency_ms": 0.0228,
+            "error": "",
+            "validation_checks": 8,
+            "correct_checks": 8,
+            "agent_timings_ms": {
+                "employee_information_agent_ms": 0.0031999952625483274,
+                "document_verification_agent_ms": 0.0049000082071870565,
+                "it_setup_agent_ms": 0.0030999945010989904,
+                "orientation_agent_ms": 0.0031999952625483274
+            }
+        },
+        {
+            "test_id": "TC09",
+            "description": "Multiple missing employee fields",
+            "expected_status": "INCOMPLETE",
+            "actual_status": "INCOMPLETE",
+            "passed": true,
+            "latency_ms": 0.0235,
+            "error": "",
+            "validation_checks": 8,
+            "correct_checks": 8,
+            "agent_timings_ms": {
+                "employee_information_agent_ms": 0.0036999990697950125,
+                "document_verification_agent_ms": 0.0052000104915350676,
+                "it_setup_agent_ms": 0.0032999960239976645,
+                "orientation_agent_ms": 0.0026999914553016424
+            }
+        },
+        {
+            "test_id": "TC10",
+            "description": "Multiple missing documents",
+            "expected_status": "INCOMPLETE",
+            "actual_status": "INCOMPLETE",
+            "passed": true,
+            "latency_ms": 0.0348,
+            "error": "",
+            "validation_checks": 8,
+            "correct_checks": 8,
+            "agent_timings_ms": {
+                "employee_information_agent_ms": 0.002900022082030773,
+                "document_verification_agent_ms": 0.004299974534660578,
+                "it_setup_agent_ms": 0.002700020559132099,
+                "orientation_agent_ms": 0.0027999922167509794
+            }
+        }
+    ]
+}

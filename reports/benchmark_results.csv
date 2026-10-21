@@ -1,0 +1,11 @@
+test_id,description,expected_status,actual_status,passed,latency_ms,error
+TC01,Complete employee information,READY FOR ONBOARDING,READY FOR ONBOARDING,True,0.0854,
+TC02,Missing employee name,INCOMPLETE,INCOMPLETE,True,0.0407,
+TC03,Missing employee ID,INCOMPLETE,INCOMPLETE,True,0.0464,
+TC04,Missing department,INCOMPLETE,INCOMPLETE,True,0.0986,
+TC05,Missing job role,INCOMPLETE,INCOMPLETE,True,0.0412,
+TC06,Missing identity document,INCOMPLETE,INCOMPLETE,True,0.0375,
+TC07,Missing educational certificate,INCOMPLETE,INCOMPLETE,True,0.0319,
+TC08,Missing signed offer letter,INCOMPLETE,INCOMPLETE,True,0.0228,
+TC09,Multiple missing employee fields,INCOMPLETE,INCOMPLETE,True,0.0235,
+TC10,Multiple missing documents,INCOMPLETE,INCOMPLETE,True,0.0348,
